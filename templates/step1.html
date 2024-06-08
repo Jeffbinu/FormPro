@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Step 1: Enter Username</h2>
+<form method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <button type="submit">Next</button>
+</form>
+{% endblock %}

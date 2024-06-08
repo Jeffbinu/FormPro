@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Step 3: Confirm Details</h2>
+<p>Username: {{ session['username'] }}</p>
+<p>Password: {{ session['password'] }}</p>
+<form action="{{ url_for('summary') }}" method="GET">
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
